@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="main-bg"></div>
+        <div id="top-bar"></div>
+
+        <h1>Currency Converter</h1>
+
+        <div id="image-holder">
+            <img src="./images/currency.svg" alt="">
+        </div>
+
+        <div id="calculator" class="container row">
+
+            <div class="input-field col s3">
+                <input type="number" id="in" />
+                <label for="in" class="active">Base Currency</label>
+            </div>
+
+            <div class="input-field col s2">
+                <select id="in_selector" class="browser-default">
+                    <option value="" disabled selected>Choose Currency</option>
+                </select>
+            </div>
+
+            <div class="col s2">
+                <center>
+                    <i class="large material-icons convert-icon" onclick="convert()">chevron_right</i>
+                </center>
+            </div>
+
+            <div class="input-field col s3">
+                <input type="number" id="out" />
+                <!-- <p id="out"></p> -->
+                <label for="out" class="active">Your Currency</label>
+            </div>
+
+            <div class="input-field col s2">
+                <select id="out_selector" class="browser-default">
+                    <option value="" disabled selected>Choose Currency</option>
+                </select>
+            </div>
+
+        </div>
+
+        <div id="description" class="row">
+            <div class="card col s2">
+                <div class="card-content">
+                    Exchane Rates by European Blah Blah Blah
+                </div>
+            </div>
+            <div class="card col s2">
+                <div class="card-content">
+                    Supports upto 32 Currencies
+                </div>
+            </div>
+            <div class="card col s2">
+                <div class="card-content">
+                    Fast Reliable and Totally Free
+                </div>
+            </div>
+        </div>
+
+        <footer class="page-footer #43a047 green darken-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                        <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
+                            content.</p>
+                    </div>
+                    <div class="col l4 offset-l2 s12">
+                        <h5 class="white-text">Previous Projects</h5>
+                        <ul>
+                            <li><a class="grey-text text-lighten-3" href="https://devscollab.com"
+                                    target="_blank">DevsCollab</a></li>
+                            <li><a class="grey-text text-lighten-3" href="https://camptrellis.devscollab.com"
+                                    target="_blank">CampTrellis</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright #1b5e20 green darken-4">
+                <div class="container">
+                    © 2014 Currency Converter
+                    <a class="grey-text text-lighten-4 right"
+                        href="https://exchangeratesapi.io/">https://exchangeratesapi.io/s</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
